@@ -2,4 +2,18 @@
 
 GET {{api}}
 
-POST {{api}}
+###
+GET {{api}}/1
+###
+
+GET {{api}}/count
+
+###
+POST {{api}} 
+Content-Type: application/json
+Content-Length: 54
+
+{
+    "title": "third task",
+    "description": "some description task"
+}
