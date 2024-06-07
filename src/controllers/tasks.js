@@ -1,5 +1,10 @@
-export const getTasks = (req, res) => {
-    res.send('Hello world');
+import {connect} from '../database.js'
+
+export const getTasks = async (req, res) => {
+    const db = await connect();
+    const [rows]= await db.query('SELECT * FROM tasks');
+    console.log(rows);
+    res.send(rows);
 }
 
 
