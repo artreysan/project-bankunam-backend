@@ -1,5 +1,5 @@
 import express from 'express';
-import tasksRouter from './routes/task.js'
+import tasksRouter from './routes/tasks.js'
 
 const app = express();
 app.use(tasksRouter);
