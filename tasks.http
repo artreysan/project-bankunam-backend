@@ -14,6 +14,35 @@ Content-Type: application/json
 Content-Length: 54
 
 {
-    "title": "third task",
-    "description": "some description task"
+    "title": "I mustt to create a website",
+    "description_task": "using wordpress"
+}
+
+###
+
+DELETE {{api}}/10
+
+###
+PUT {{api}}/7
+Content-type: application/json
+
+{
+    "title": "I have to dinner"
+}
+
+###
+PUT {{api}}/8
+Content-type: application/json
+
+{
+    "description_task": "New description"
+}
+
+###
+PUT {{api}}/11
+Content-type: application/json
+
+{
+    "title": "I have to dinner",
+    "description_task": "New description"
 }
