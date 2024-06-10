@@ -47,5 +47,5 @@ export const updateTask = async (req, res) => {
         req.params.id
     ]);
 
-    res.json(response);
+    res.sendStatus(204);
 }
